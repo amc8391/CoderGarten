@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Welcome to CoderGarten</title>
+{% extends 'main.html' %}
 
-
-    <link href="../static/custom/css/main.css" rel='stylesheet' type='text/css'>
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-</head>
-<body>
-    <div>
-        <h1>CoderGarten, son</h1>
-    </div>
-</body>
-</html>
+{% block title %}
+	Welcome to CoderGarten!
+{% endblock %}
+	
+{% block content %}
+<div>
+    <h1>CoderGarten, son</h1>
+</div>
+{% endblock %}

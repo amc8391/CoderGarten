@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    {% block head %}
+    <title>{% block title %}{% endblock %}</title>
+	
+	<!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap-3.3.6-dist/css/bootstrap.min.css') }}">
+
+    <link href="../static/css/main.css" rel='stylesheet' type='text/css'>
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    {% endblock %}
+</head>
+
+<body>
+	<div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+      {% block footer %}
+      {% endblock %}
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="{{ url_for('static', filename='bootstrap-3.3.6-dist/js/bootstrap.min.js') }}"></script>
+</html>
