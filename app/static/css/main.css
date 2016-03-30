@@ -1,4 +1,19 @@
-body {
-  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif; }
+html, body {
+	font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif; 
+	margin:0; 
+	padding:0; 
+	height:100%;
+}
+
+/* left hand navbar */
+.side {
+	background-color: #f5f5f5;
+}
+
+.full {
+	margin:0; 
+	padding:0; 
+	height:100%;
+}
 
 /*# sourceMappingURL=main.css.map */
