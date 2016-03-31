@@ -11,7 +11,9 @@ def index():
 def student_homepage():
 	return render_template('student-homepage.html')
 
-
+@app.route('/leaderboard')
+def leaderboard():
+	return render_template('leaderboard.html')
 
 @app.route('/messages')
 def messages():

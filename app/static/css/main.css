@@ -39,8 +39,14 @@ ul {
 	background-color: #f5f5f5;
 }
 
+/* leaderboard */
+#leaderboard {
+	margin: 0 auto;
+	width: 65%;
+}
+
 /* contents */
-table tr:hover:not(:first-child) {
+/*table tr:hover:not(:first-child) {
 	cursor: pointer;
 	background-color: #80dfff;
-}
+}*/
