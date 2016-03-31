@@ -12,3 +12,9 @@ def student_homepage():
 	return render_template('student-homepage.html')
 
 
+
+@app.route('/messages')
+def messages():
+	return render_template('messages.html')
+
+
