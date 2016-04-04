@@ -1,3 +1,30 @@
+function loginSubmit(){
+	var username = $('#username').val();
+	var password = $('#password').val();
+	var valid = false;
+	var url = "http://localhost:5000"
+
+	if(username == 'saitama' && password == 'onepunch'){
+		sessionStorage.setItem("uType","student");
+		url += "/student-homepage";
+		valid = true;
+	} else if (username == 'one' && password == 'mobpsycho'){
+		sessionStorage.setItem("uType","parent");
+		url += "/parent-homepage";
+		valid = true;
+	}
+	else if (username == 'murata' && password == 'redraw'){
+		sessionStorage.setItem("uType","teacher");
+		url += "/teacher-homepage";
+		valid = true;
+	} else {
+		$('#incorrect-creds').removeClass('login-error');
+	}
+	if(valid == true){
+		window.location.href = url;
+	}
+}
+
 $(document).ready( function () {
 	/* show hide elements*/
 
@@ -19,30 +46,15 @@ $(document).ready( function () {
 	});
 
 	$('#login-submit').click(function(e){
-		var username = $('#username').val();
-		var password = $('#password').val();
-		var valid = false;
-		var url = "http://localhost:5000"
+		loginSubmit();
+	});
 
-		if(username == 'saitama' && password == 'onepunch'){
-			sessionStorage.setItem("uType","student");
-			url += "/student-homepage";
-			valid = true;
-		} else if (username == 'one' && password == 'mobpsycho'){
-			sessionStorage.setItem("uType","parent");
-			url += "/parent-homepage";
-			valid = true;
-		}
-		else if (username == 'murata' && password == 'redraw'){
-			sessionStorage.setItem("uType","teacher");
-			url += "/teacher-homepage";
-			valid = true;
-		} else {
-			$('#incorrect-creds').removeClass('login-error');
-		}
-		if(valid == true){
-			window.location.href = url;
-		}
-		
+	$(document).keypress(function(e){
+		var key = (event.keyCode ? event.keyCode : event.which);
+		 if(key == 13)  // the enter key code
+		  {
+		    $('input[id = login-submit]').click();
+		    return false;  
+		  }
 	});
 });
