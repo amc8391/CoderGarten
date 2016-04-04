@@ -6,46 +6,46 @@ Messages | CoderGarten
 
 {% block content %}
 <div id="message-page-content">
-<div class="messages-buttons">
-    <button class="btn btn-primary">New Message</button>
-</div>
-<h1>Inbox</h1>
-<table class="table">
-    <tr>
-        <th>From</th>
-        <th>Subject</th>
-        <th>Date/Time</th>
-    </tr>
-    <tr class='clickable-row' onclick="viewMessage()">
-        <td>Smith, John</td>
-        <td>Re: Bobby's Progress</td>
-        <td>03/03 2:30pm</td>
-    </tr>
-    <tr class='clickable-row' onclick="viewMessage()">
-        <td>Smith, John</td>
-        <td>Extra Credit</td>
-        <td>03/03 1:00pm</td>
-    </tr>
-</table>
+    <div class="messages-buttons">
+        <button class="btn btn-primary">New Message</button>
+    </div>
+    <h1>Inbox</h1>
+    <table class="table">
+        <tr>
+            <th>From</th>
+            <th>Subject</th>
+            <th>Date/Time</th>
+        </tr>
+        <tr class='clickable-row' onclick="viewMessage()">
+            <td>Smith, John</td>
+            <td>Re: Bobby's Progress</td>
+            <td>03/03 2:30pm</td>
+        </tr>
+        <tr class='clickable-row' onclick="viewMessage()">
+            <td>Smith, John</td>
+            <td>Extra Credit</td>
+            <td>03/03 1:00pm</td>
+        </tr>
+    </table>
 
-<h1>Sent</h1>
-<table class="table">
-    <tr>
-        <th>From</th>
-        <th>Subject</th>
-        <th>Date/Time</th>
-    </tr>
-    <tr class='clickable-row' onclick="viewMessage()">
-        <td>Smith, John</td>
-        <td>Re: Re: Bobby's Progress</td>
-        <td>03/03 4:00pm</td>
-    </tr>
-</table>
+    <h1>Sent</h1>
+    <table class="table">
+        <tr>
+            <th>From</th>
+            <th>Subject</th>
+            <th>Date/Time</th>
+        </tr>
+        <tr class='clickable-row' onclick="viewMessage()">
+            <td>Smith, John</td>
+            <td>Re: Re: Bobby's Progress</td>
+            <td>03/03 4:00pm</td>
+        </tr>
+    </table>
 </div>
 
-{% endblock %}
 <script>
     function viewMessage() {
         window.location.href = "/message/view";
     }
 </script>
+{% endblock %}
