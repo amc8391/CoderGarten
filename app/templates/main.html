@@ -68,10 +68,7 @@
         </div>
        
     </div>
-    <div id="footer">
-      {% block footer %}
-      {% endblock %}
-    </div>
+
 </body>
 
 <!-- jQuery -->
@@ -93,5 +90,9 @@
 <!-- our own js -->
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
+<div id="footer">
+  {% block footer %}
+  {% endblock %}
+</div>
 
 </html>
