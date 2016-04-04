@@ -33,3 +33,6 @@ def view_message():
 	return render_template('view-message.html')
 
 
+@app.route('/editor')
+def editor():
+    return render_template('editor.html')
