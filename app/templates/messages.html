@@ -11,6 +11,7 @@ Messages | CoderGarten
     </div>
     <h1>Inbox</h1>
     <table class="table">
+        <tbody>
         <tr>
             <th>From</th>
             <th>Subject</th>
@@ -26,6 +27,7 @@ Messages | CoderGarten
             <td>Extra Credit</td>
             <td>03/03 1:00pm</td>
         </tr>
+        </tbody>
     </table>
 
     <h1>Sent</h1>
@@ -42,7 +44,9 @@ Messages | CoderGarten
         </tr>
     </table>
 </div>
+{% endblock %}
 
+{% block footer %}
 <script>
     function viewMessage() {
         window.location.href = "/message/view";
