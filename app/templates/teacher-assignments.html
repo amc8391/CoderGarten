@@ -1,0 +1,84 @@
+{% extends 'main.html' %}
+
+{% block title %}
+	Welcome to CoderGarten!
+{% endblock %}
+
+{% block content %}
+    <div class="column">
+        <section class="panel panel-default panel-65">
+            <header class="panel-heading">
+                <h3 class="panel-title">Assigned</h3>
+            </header>
+
+            <div class="panel-body">
+                <table class="table table-responsive">
+                    <tr></tr>
+                    <tr id="parent1" data-toggle="collapse" data-target="#body1">
+                        <td>Python 1 - Variables and Printing</td>
+                    </tr>
+
+                    <tr id="body1" data-parent="#parent1" class="panel-collapse collapse">
+                        <td>
+                            <div>
+                                -Step 1: Hello World
+                            </div>
+                            <br></br>
+
+
+                            <div>
+                                -Step 2: X = 1337
+                            </div>
+                        </td>
+                    </tr>
+                        <td>Python 2 - Loops</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+    <section class="panel panel-default panel-65">
+            <header class="panel-heading">
+                <h3 class="panel-title">Unassigned</h3>
+            </header>
+
+                <div class="panel-body">
+                <table class="table table-responsive" style="border-collapse:collapse;">
+                    <tr></tr>
+                    <tr id="parent3" data-toggle="collapse" data-target="#body3">
+                        <td>Python 3 - Functions</td>
+                    </tr>
+
+                    <tr id="body3" data-parent="#parent3" class="collapse">
+                        <td colspan="6">
+                        <div id="accordion">
+                            -Step 1: Getting Func-y
+                        </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr id="parent4" data-toggle="collapse" data-target="#body4">
+                        <td>Python 4 - Classes</td>
+                    </tr>
+
+                    <tr id="body4" data-parent="#parent4" class="panel-collapse collapse">
+                        <td>
+                            <div>
+                                -Step 1: Stay Classy
+                            </div>
+                            <br></br>
+
+
+                            <div>
+                                -Step 2: I can't come up with a pun
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+    </section>
+    </div>
+{% endblock %}
