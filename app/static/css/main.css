@@ -43,7 +43,6 @@ h1 {
 
 .panel-65 {
 	margin: 0 auto;
-	width: 65%;
 	margin-bottom: 50px;
 }
 
@@ -69,7 +68,6 @@ h1 {
 /* leaderboard */
 
 #leaderboard {
-    width: 65%;
     margin: 0 auto;
 }
 
