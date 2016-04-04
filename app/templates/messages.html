@@ -5,6 +5,7 @@ Messages | CoderGarten
 {% endblock %}
 
 {% block content %}
+<div id="message-page-content">
 <div class="messages-buttons">
     <button class="btn btn-primary">New Message</button>
 </div>
@@ -40,11 +41,11 @@ Messages | CoderGarten
         <td>03/03 4:00pm</td>
     </tr>
 </table>
+</div>
 
+{% endblock %}
 <script>
     function viewMessage() {
         window.location.href = "/message/view";
     }
 </script>
-
-{% endblock %}
