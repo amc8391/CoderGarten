@@ -30,6 +30,8 @@ h1 {
 #content {
     margin-bottom: 51px;
 	/*margin-top: 51px;*/
+    margin: 0 auto;
+	width: 65%;
 }
 
 .full {
@@ -203,9 +205,4 @@ table tr:hover:not(:first-child) {
 div.messages-buttons {
     float: right;
     margin-top: 5px;
-}
-
-#message-page-content {
-	margin: 0 auto;
-	width: 65%;
 }
