@@ -22,9 +22,14 @@ h1 {
 
 /* containers */
 
+.dead-link, .dead-link:visited, .dead-link:hover, .dead-link:active {
+  color: #9d9d9d !important;
+  cursor: default !important;
+}
+
 #content {
-    margin-top: 51px;
     margin-bottom: 51px;
+	/*margin-top: 51px;*/
 }
 
 .full {
@@ -35,9 +40,9 @@ h1 {
 }
 
 .panel-65 {
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 50px;
+	margin: 0 auto;
+	width: 65%;
+	margin-bottom: 50px;
 }
 
 .div-inline {
@@ -67,7 +72,8 @@ h1 {
 }
 
 .you {
-    background-color: cyan !important;
+    background-color: #337ab7 !important;
+    color: white;
 }
 
 /* login */
@@ -75,6 +81,7 @@ h1 {
 body {
     padding-top: 90px;
 }
+
 
 .panel-login {
     border-color: #CCC;
@@ -196,4 +203,9 @@ table tr:hover:not(:first-child) {
 div.messages-buttons {
     float: right;
     margin-top: 5px;
+}
+
+#message-page-content {
+	margin: 0 auto;
+	width: 65%;
 }
