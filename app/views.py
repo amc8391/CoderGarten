@@ -2,11 +2,11 @@ __author__ = 'Team OnePunch'
 from app import app
 from flask import render_template
 
-@app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
 
+@app.route('/')
 @app.route('/login')
 def login():
 	return render_template('login.html')
@@ -27,6 +27,10 @@ def leaderboard():
 @app.route('/messages')
 def messages():
 	return render_template('messages.html')
+
+@app.route('/message/new')
+def new_message():
+	return render_template('new-message.html')
 
 @app.route('/message/view')
 def view_message():

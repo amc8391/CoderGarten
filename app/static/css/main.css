@@ -22,9 +22,16 @@ h1 {
 
 /* containers */
 
-#content {
-	/*margin-top: 51px;*/
+.dead-link, .dead-link:visited, .dead-link:hover, .dead-link:active {
+  color: #9d9d9d !important;
+  cursor: default !important;
+}
 
+#content {
+    margin-bottom: 51px;
+	/*margin-top: 51px;*/
+    margin: 0 auto;
+	width: 65%;
 }
 
 .full {
@@ -67,13 +74,18 @@ h1 {
 }
 
 .you {
-    background-color: cyan !important;
+    background-color: #337ab7 !important;
+    color: white;
 }
 
 /* login */
 
 body {
     padding-top: 90px;
+}
+
+.login-error {
+	visibility: hidden;
 }
 
 .panel-login {
@@ -187,8 +199,7 @@ body {
 }
 
 /* messages */
-
-table tr:hover:not(:first-child) {
+.clickable-row:hover {
     background-color: #80DFFF;
     cursor: pointer;
 }
@@ -196,4 +207,8 @@ table tr:hover:not(:first-child) {
 div.messages-buttons {
     float: right;
     margin-top: 5px;
+}
+
+.message-content textarea {
+    width: 100%;
 }
