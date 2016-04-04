@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    {% block head %}
+    
     <title>{% block title %}{% endblock %}</title>
 	
 	<!-- Bootstrap -->
@@ -18,7 +18,7 @@
     <link href="{{ url_for('static', filename='css/main.css') }}" rel='stylesheet' type='text/css'>
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    {% endblock %}
+    {% block head %}{% endblock %}
 </head>
 
 <body>
