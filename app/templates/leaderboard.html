@@ -1,0 +1,60 @@
+{% extends 'main.html' %}
+
+{% block title %}
+	Welcome to CoderGarten!
+{% endblock %}
+	
+{% block content %}
+<div style="height: 51px">
+</div>
+<div id="leaderboard">
+	<table id="table_id" class="table table-striped table-bordered leaderboard" cellspacing="0" width="100%">
+	    <thead>
+	        <tr>
+	            <th>Rank</th>
+	            <th>Username</th>
+	            <th>Grade Level</th>
+	            <th>Experience Pts.</th>
+	            <th>Level</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr class="you">
+	            <td>1</td>
+	            <td>Saitama</td>
+	            <td>1</td>
+	            <td>999999999</td>
+	            <td>9001</td>
+	        </tr>
+	        <tr>
+	            <td>2</td>
+	            <td>Genos</td>
+	            <td>7</td>
+	            <td>999,981</td>
+	            <td>1000</td>
+	        </tr>
+	        <tr>
+	            <td>3</td>
+	            <td>Garou</td>
+	            <td>12</td>
+	            <td>2000000</td>
+	            <td>2300</td>
+	        </tr>
+	        <tr>
+	            <td>4</td>
+	            <td>One</td>
+	            <td>1</td>
+	            <td>1</td>
+	            <td>1</td>
+	        </tr>	
+	        <tr>
+	            <td>5</td>
+	            <td>Blast</td>
+	            <td>10</td>
+	            <td>0</td>
+	            <td>1</td>
+	        </tr>        
+	    </tbody>
+	</table>
+</div>
+{% endblock %}

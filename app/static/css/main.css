@@ -45,6 +45,10 @@ ul {
 	width: 65%;
 }
 
+.you {
+	background-color: cyan !important;
+}
+
 /* contents */
 /*table tr:hover:not(:first-child) {
 	cursor: pointer;
