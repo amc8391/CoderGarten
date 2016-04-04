@@ -11,6 +11,11 @@ def index():
 def student_homepage():
 	return render_template('student-homepage.html')
 
+# TODO: Replace later.
+@app.route('/parent-homepage')
+def parent_homepage():
+	return render_template('parent-homepage.html')
+
 @app.route('/leaderboard')
 def leaderboard():
 	return render_template('leaderboard.html')
@@ -18,5 +23,3 @@ def leaderboard():
 @app.route('/messages')
 def messages():
 	return render_template('messages.html')
-
-

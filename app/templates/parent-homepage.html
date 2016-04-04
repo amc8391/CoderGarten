@@ -1,0 +1,89 @@
+{% extends 'main.html' %}
+
+{% block title %}
+	Welcome to CoderGarten!
+{% endblock %}
+	
+{% block content %}
+	<header style="text-align: center; margin-top: 96px;">
+		<h1>Bobby Droptables</h1>
+		<h3>Parent: Mrs. Tina Droptables (You)</h3>
+		<h3>Parent: Mr. David Droptables</h3>
+	</header>
+	<div class="row">
+		<section class="panel panel-default panel-65">
+			<header class="panel-heading">
+				<h3 class="panel-title">1st Period</h3>
+			</header>
+			<div class="panel-body">
+				<p>Course: Intro to Programming</p>
+				<p>Teacher: Mr. John Smith</p>
+				<p>Current Grade: 45%</p>
+				<table class="table table-hover">
+					<tr>
+						<th>Project</th>
+						<th>Due Date</th>
+						<th>Grade <span class="glyphicon glyphicon-chevron-up"></span></th>
+						<th>Notes</th>
+					</tr>
+					<tr>
+						<td>Python 1</td>
+						<td>02-28 11:59pm</td>
+						<td>85%</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Python 2</td>
+						<td>03-06 11:59pm</td>
+						<td>50%</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>SQL 1</td>
+						<td>02-21 11:59pm</td>
+						<td>0%</td>
+						<td>Broke our datadase</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+	</div>
+	<div class="row">
+		<section class="panel panel-default panel-65">
+			<div class="panel-heading">
+				<h3 class="panel-title">2nd Period</h3>
+			</div>
+			<div class="panel-body">
+				<p>Course: Class of Things</p>
+				<p>Teacher: Mrs. Jane Doe</p>
+				<p>Current Grade: 80%</p>
+				<table class="table table-hover">
+					<tr>
+						<th>Project</th>
+						<th>Due Date</th>
+						<th>Grade <span class="glyphicon glyphicon-chevron-up"></span></th>
+						<th>Notes</th>
+					</tr>
+					<tr>
+						<td>Thing</td>
+						<td>02-28 11:59pm</td>
+						<td>95%</td>
+						<td>Great things!</td>
+					</tr>
+					<tr>
+						<td>Stuff</td>
+						<td>03-06 11:59pm</td>
+						<td>60%</td>
+						<td>This sure was some stuff.</td>
+					</tr>
+					<tr>
+						<td>Minutiae</td>
+						<td>03-13 11:59pm</td>
+						<td>0%</td>
+						<td>Needs more attention to detail</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+	</div>
+{% endblock %}
