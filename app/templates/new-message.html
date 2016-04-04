@@ -1,0 +1,42 @@
+{% extends 'main.html' %}
+
+{% block title %}
+View Message | CoderGarten
+{% endblock %}
+
+{% block content %}
+<div class="messages-buttons">
+    <button class="btn btn-primary" onclick="goToLink('#')">Save as Draft</button>
+    <button class="btn btn-success" onclick="goToLink('#')">Send</button>
+</div>
+<h1>New Message</h1>
+<div class="message-content">
+    <form role="form">
+        <div class="form-group">
+            <label>To</label>:
+            <input type="text" class="form-control" value="John Smith">
+        </div>
+        <div class="form-group">
+            <label>Subject</label>:
+            <input type="text" class="form-control" value="Re: Boby's Progress">
+        </div>
+        <div class="form-group">
+            <label>Course</label>
+            <input type="text" class="form-control" value="Intro to Programmin">
+        </div>
+        <div class="form-group">
+            <label>Assignment</label>
+            <input type="text" class="form-control" value="SQL 1 - Tables">
+        </div>
+        <hr>
+        <textarea class="input-sm" rows="15">
+            Mr. Smith,
+
+            Thank you for your consideration; Bobby will have the assignment done by the end of the night.
+
+            Sincerely,
+            Tina Droptables
+        </textarea>
+    </form>
+</div>
+{% endblock %}

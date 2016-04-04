@@ -199,7 +199,6 @@ body {
 }
 
 /* messages */
-
 .clickable-row:hover {
     background-color: #80DFFF;
     cursor: pointer;
@@ -208,4 +207,8 @@ body {
 div.messages-buttons {
     float: right;
     margin-top: 5px;
+}
+
+.message-content textarea {
+    width: 100%;
 }

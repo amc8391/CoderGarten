@@ -2,18 +2,18 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    
+
     <title>{% block title %}{% endblock %}</title>
-	
+
 	<!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap-3.3.6-dist/css/bootstrap.min.css') }}">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- jQuery Datatables -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css">
-    
+
     <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='DataTables-1.10.11/media/css/dataTables.bootstrap.min.css') }}">-->
-    
+
 
     <link href="{{ url_for('static', filename='css/main.css') }}" rel='stylesheet' type='text/css'>
     <!-- Google Fonts -->
@@ -61,12 +61,12 @@
                     <li><a href="#">Settings</a></li>
                 </ul>
             </div>
-    	   
+
        </div>-->
         <div id="content">
             {% block content %}{% endblock %}
         </div>
-       
+
     </div>
 
 </body>
