@@ -197,7 +197,7 @@ body {
 
 /* messages */
 
-table tr:hover:not(:first-child) {
+.clickable-row:hover {
     background-color: #80DFFF;
     cursor: pointer;
 }
