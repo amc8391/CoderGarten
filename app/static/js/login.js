@@ -1,4 +1,7 @@
 $(document).ready( function () {
+	/* show hide elements*/
+
+
 	$('#login-form-link').click(function(e) {
 		$("#login-form").delay(100).fadeIn(100);
 			$("#register-form").fadeOut(100);
@@ -35,6 +38,8 @@ $(document).ready( function () {
 			url += "/teacher-homepage";
 			pString += "&type=teacher";
 			valid = true;
+		} else {
+			$('#incorrect-creds').removeClass('login-error');
 		}
 		if(valid == true){
 			window.location.href = url + pString;

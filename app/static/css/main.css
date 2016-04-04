@@ -84,6 +84,9 @@ body {
     padding-top: 90px;
 }
 
+.login-error {
+	visibility: hidden;
+}
 
 .panel-login {
     border-color: #CCC;
