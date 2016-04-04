@@ -23,29 +23,25 @@ $(document).ready( function () {
 		var password = $('#password').val();
 		var valid = false;
 		var url = "http://localhost:5000"
-		var pString = "?username=" + username + "&password=" + password;
 
 		if(username == 'saitama' && password == 'onepunch'){
 			sessionStorage.setItem("uType","student");
 			url += "/student-homepage";
-			pString += "&type=student";
 			valid = true;
 		} else if (username == 'one' && password == 'mobpsycho'){
 			sessionStorage.setItem("uType","parent");
 			url += "/parent-homepage";
-			pString += "&type=parent";
 			valid = true;
 		}
 		else if (username == 'murata' && password == 'redraw'){
 			sessionStorage.setItem("uType","teacher");
 			url += "/teacher-homepage";
-			pString += "&type=teacher";
 			valid = true;
 		} else {
 			$('#incorrect-creds').removeClass('login-error');
 		}
 		if(valid == true){
-			window.location.href = url + pString;
+			window.location.href = url;
 		}
 		
 	});
