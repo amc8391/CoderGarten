@@ -1,3 +1,22 @@
+function logout(){
+	window.location.href = "http://localhost:5000"
+		sessionStorage.clear();
+}
+
+function goToLink(link) {
+    window.location.href = link;
+}
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)", "i"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
 $(document).ready(function () {
 	/* decide which navbar to show */
 	var uType = sessionStorage.getItem("uType");
@@ -16,18 +35,8 @@ $(document).ready(function () {
 		case "default":
 			break;
 	}
+
+	$('.logout').click(function(){
+		logout();
+	});
 });
-
-function goToLink(link) {
-    window.location.href = link;
-}
-
-function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)", "i"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
