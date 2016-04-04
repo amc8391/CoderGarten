@@ -32,4 +32,8 @@ def messages():
 def view_message():
 	return render_template('view-message.html')
 
+@app.route('/teacher-assignments')
+def teacher_assignments():
+	return render_template('teacher-assignments.html')
+
 
