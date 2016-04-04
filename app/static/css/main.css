@@ -54,7 +54,10 @@ h1 {
     text-align: center;
 }
 
-/* left hand navbar */
+/* navbar */
+.student-nav, .parent-nav, .teacher-nav {
+	visibility: hidden;
+}
 
 .side {
     background-color: #F5F5F5;
@@ -197,7 +200,6 @@ body {
 }
 
 /* messages */
-
 .clickable-row:hover {
     background-color: #80DFFF;
     cursor: pointer;
@@ -206,4 +208,8 @@ body {
 div.messages-buttons {
     float: right;
     margin-top: 5px;
+}
+
+.message-content textarea {
+    width: 100%;
 }

@@ -28,6 +28,10 @@ def leaderboard():
 def messages():
 	return render_template('messages.html')
 
+@app.route('/message/new')
+def new_message():
+	return render_template('new-message.html')
+
 @app.route('/message/view')
 def view_message():
 	return render_template('view-message.html')
