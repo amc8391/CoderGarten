@@ -1,5 +1,6 @@
 $(document).ready(function () {
-	var uType = getParameterByName('type');
+	/* decide which navbar to show */
+	var uType = sessionStorage.getItem("uType");
 	switch(uType){
 		case "student":
 			$('#student-nav').removeClass('student-nav');
