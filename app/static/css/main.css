@@ -12,6 +12,10 @@ html {
     sans-serif;
 }
 
+body {
+    padding-top: 90px;
+}
+
 ul {
     list-style-type: none;
 }
@@ -85,9 +89,18 @@ h1 {
 }
 
 /* login */
+#login-page {
+	background-image: url("../img/tulips.jpg");
+    background-size: cover;
+    padding-top: 35px;
+}
 
-body {
-    padding-top: 90px;
+.login-header {
+	margin: 0 auto;
+}
+
+#login-header h1 {
+	font-size: 50 !important;
 }
 
 .login-error {
