@@ -1,3 +1,4 @@
+/* general */
 html, body {
 	font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif; 
 	margin:0; 
@@ -9,6 +10,11 @@ ul {
 	list-style-type: none;
 }
 
+h1 {
+	text-align: center;
+}
+
+/* containers */
 #content {
 	margin-top: 51px;
 }
@@ -43,4 +49,9 @@ ul {
 table tr:hover:not(:first-child) {
 	cursor: pointer;
 	background-color: #80dfff;
+}
+
+div.messages-buttons {
+	float: right;
+	margin-top: 5px;
 }

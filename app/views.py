@@ -17,4 +17,8 @@ def student_homepage():
 def messages():
 	return render_template('messages.html')
 
+@app.route('/message/view')
+def view_message():
+	return render_template('view-message.html')
+
 
