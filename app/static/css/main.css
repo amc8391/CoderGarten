@@ -10,7 +10,7 @@ ul {
 }
 
 #content {
-	margin-top: 51px;
+	/*margin-top: 51px;*/
 }
 
 .full {
@@ -23,7 +23,7 @@ ul {
 .panel-65 {
 	margin: 0 auto;
 	width: 65%;
-	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .div-inline {
