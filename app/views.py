@@ -23,3 +23,7 @@ def leaderboard():
 @app.route('/messages')
 def messages():
 	return render_template('messages.html')
+
+@app.route('/login')
+def login():
+	return render_template('login.html')
