@@ -73,6 +73,10 @@ h1 {
 	visibility: hidden;
 }
 
+.navbar-nav .badge {
+    background-color: #e23442;
+}
+
 .side {
     background-color: #F5F5F5;
 }
@@ -110,7 +114,7 @@ h1 {
 }
 
 #login-header h1 {
-	font-size: 50 !important;
+	font-size: 50px !important;
 }
 
 .login-error {
