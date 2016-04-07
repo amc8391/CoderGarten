@@ -37,6 +37,16 @@ h1 {
     margin: 0 auto;
 	width: 65%;
 }
+@media screen and (max-width: 768px) {
+    #content {
+        width: 85%
+    }
+}
+@media screen and (max-width: 480px) {
+    #content {
+        width: 95%
+    }
+}
 
 .full {
     height: 100%;
@@ -61,6 +71,10 @@ h1 {
 /* navbar */
 .student-nav, .parent-nav, .teacher-nav {
 	visibility: hidden;
+}
+
+.navbar-nav .badge {
+    background-color: #e23442;
 }
 
 .side {
@@ -100,7 +114,7 @@ h1 {
 }
 
 #login-header h1 {
-	font-size: 50 !important;
+	font-size: 50px !important;
 }
 
 .login-error {
