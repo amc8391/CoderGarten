@@ -12,6 +12,10 @@ html {
     sans-serif;
 }
 
+body {
+    padding-top: 90px;
+}
+
 ul {
     list-style-type: none;
 }
@@ -43,7 +47,6 @@ h1 {
 
 .panel-65 {
 	margin: 0 auto;
-	width: 65%;
 	margin-bottom: 50px;
 }
 
@@ -55,7 +58,10 @@ h1 {
     text-align: center;
 }
 
-/* left hand navbar */
+/* navbar */
+.student-nav, .parent-nav, .teacher-nav {
+	visibility: hidden;
+}
 
 .side {
     background-color: #F5F5F5;
@@ -66,10 +72,14 @@ h1 {
     padding-left: 5px !important;
 }
 
+.logout {
+	margin-top: 7px;
+    margin-right: 20px;
+}
+
 /* leaderboard */
 
 #leaderboard {
-    width: 65%;
     margin: 0 auto;
 }
 
@@ -79,9 +89,18 @@ h1 {
 }
 
 /* login */
+#login-page {
+	background-image: url("../img/tulips.jpg");
+    background-size: cover;
+    padding-top: 35px;
+}
 
-body {
-    padding-top: 90px;
+.login-header {
+	margin: 0 auto;
+}
+
+#login-header h1 {
+	font-size: 50 !important;
 }
 
 .login-error {
@@ -199,7 +218,6 @@ body {
 }
 
 /* messages */
-
 .clickable-row:hover {
     background-color: #80DFFF;
     cursor: pointer;
@@ -208,4 +226,8 @@ body {
 div.messages-buttons {
     float: right;
     margin-top: 5px;
+}
+
+.message-content textarea {
+    width: 100%;
 }
