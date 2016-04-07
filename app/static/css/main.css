@@ -37,6 +37,16 @@ h1 {
     margin: 0 auto;
 	width: 65%;
 }
+@media screen and (max-width: 768px) {
+    #content {
+        width: 85%
+    }
+}
+@media screen and (max-width: 480px) {
+    #content {
+        width: 95%
+    }
+}
 
 .full {
     height: 100%;
