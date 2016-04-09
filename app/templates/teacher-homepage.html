@@ -1,0 +1,117 @@
+{% extends 'main.html' %}
+
+{% block title %}
+Welcome to CoderGarten!
+{% endblock %}
+
+{% block content %}
+
+<section class="column">
+    <section class="panel panel-default panel-65">
+        <header class="panel-heading">
+            <h3 class="panel-title">Class Sections</h3>
+        </header>
+
+        <div class="panel-body">
+            <div style="overflow-y:scroll;">
+
+                <table class="table table-responsive">
+                    <tr></tr>
+                    <tr>
+                        <td>
+                            <div class="col-md-3">
+                                <a href="class-section/">1st Period - 5th Grade</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-md-3">
+                                <a href="class-section/">5th Period - 7th Grade</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-md-3">
+                                <a href="class-section/">7th Period - 6th Grade</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-md-3">
+                                <a href="class-section/">9th Period - 5th Grade</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="panel panel-default panel-65">
+        <header class="panel-heading">
+            <h3 class="panel-title">Messages</h3>
+        </header>
+
+        <div class="panel-body">
+            <div style="overflow-y:scroll;">
+
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>From</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tr></tr>
+                    <tr>
+                        <td>
+                            <div class="col-md-7">
+                                Mrs. Droptables
+                            </div>
+                        </td>
+
+                        <td class="clickable-row" onclick="goToLink('/message/view')">
+                            <div class="col-md-7">
+                                 Re: Bobby's Progress
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-md-7">
+                                Bobby Droptables
+                            </div>
+                        </td>
+
+                        <td class="clickable-row" onclick="goToLink('/message/view')">
+                            <div class="col-md-7">
+                                Extra Credit
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-md-7">
+                                Mrs. Droptables
+                            </div>
+                        </td>
+
+                        <td class="clickable-row" onclick="goToLink('/message/view')">
+                            <div class="col-md-7">
+                                Bobby's Progress
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+
+
+
+
+{% endblock %}

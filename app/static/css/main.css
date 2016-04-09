@@ -245,3 +245,10 @@ div.messages-buttons {
 .message-content textarea {
     width: 100%;
 }
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: #5C5C5C;
+}
