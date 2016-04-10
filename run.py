@@ -3,8 +3,8 @@ __author__ = 'Team OnePunch'
 #!flask/bin/python
 import os
 from flask import Flask
+from app import app
 
-app = Flask(__name__)
 #app.run(debug=True)
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
