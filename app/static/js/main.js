@@ -2,7 +2,7 @@ function logout(){
 	$.ajax({
 			url: "/login",
 			success: function(){
-            document.location = url;  // redirect browser to link
+            document.location = "/login";  // redirect browser to link
         }
 		});
 	sessionStorage.clear();
