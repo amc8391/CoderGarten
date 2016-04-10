@@ -2,26 +2,31 @@ function loginSubmit(){
 	var username = $('#username').val();
 	var password = $('#password').val();
 	var valid = false;
-	var url = "http://localhost:5000"
+	//var url = "http://localhost:5000"
 
 	if(username == 'saitama' && password == 'onepunch'){
 		sessionStorage.setItem("uType","student");
-		url += "/student-homepage";
+		url = "/student-homepage";
 		valid = true;
 	} else if (username == 'one' && password == 'mobpsycho'){
 		sessionStorage.setItem("uType","parent");
-		url += "/parent-homepage";
+		url = "/parent-homepage";
 		valid = true;
 	}
 	else if (username == 'murata' && password == 'redraw'){
 		sessionStorage.setItem("uType","teacher");
-		url += "/teacher-homepage";
+		url = "/teacher-homepage";
 		valid = true;
 	} else {
 		$('#incorrect-creds').removeClass('login-error');
 	}
 	if(valid == true){
-		window.location.href = url;
+		$.ajax({
+			url: url,
+			success: function(){
+            document.location = url;  // redirect browser to link
+        }
+		});
 	}
 }
 

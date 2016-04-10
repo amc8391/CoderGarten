@@ -1,6 +1,11 @@
 function logout(){
-	window.location.href = "http://localhost:5000"
-		sessionStorage.clear();
+	$.ajax({
+			url: "/login",
+			success: function(){
+            document.location = url;  // redirect browser to link
+        }
+		});
+	sessionStorage.clear();
 }
 
 function goToLink(link) {
