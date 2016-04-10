@@ -50,3 +50,7 @@ def editor():
 @app.route('/teacher-homepage')
 def teacher_homepage():
     return render_template('teacher-homepage.html')
+
+@app.route('/settings')
+def settings():
+    return render_template('settings.html')
