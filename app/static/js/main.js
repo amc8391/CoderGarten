@@ -12,14 +12,6 @@ function goToLink(link) {
     window.location.href = link;
 }
 
-function toggleDisplay(id) {
-	if ($(id).css('display') == 'none') {
-		$(id).css('display', 'block');
-	} else {
-		$(id).css('display', 'none');
-	}
-}
-
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -36,7 +28,6 @@ $(document).ready(function () {
 	switch(uType){
 		case "student":
 			$('#student-nav').removeClass('student-nav');
-			//$('#student-nav').css("display", "block");
 			break;
 
 		case "teacher":
