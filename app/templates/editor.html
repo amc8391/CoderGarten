@@ -13,64 +13,190 @@ Python 1 - Step 2: X = 1337
         <li><a href="#">Stage 3</a></li>
     </ul>
 </div>
-<div>
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#solution-tab">Solution</a></li>
-        <li><a data-toggle="tab" href="#help">Help</a></li>
-    </ul>
-    <div class="tab-content container-fluid">
-        <div id="solution-tab" class="tab-pane fade in active row">
-            <div id="solution-row" class="row">
-                <div class="col-xs-9">
-                    <textarea id="yourcode">
+
+<div class="editor-content">
+    <div id="parent-editor">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#solution-tab">Solution</a></li>
+            <li><a data-toggle="tab" href="#help">Help</a></li>
+        </ul>
+        <div class="tab-content container-fluid">
+            <div id="solution-tab" class="tab-pane fade in active row">
+                <div class="solution-row row">
+                    <div class="col-xs-9">
+                    <textarea class="yourcode">
 x = 1337
 print(x)
 </textarea>
-                    <button onclick="runit()">Run my program!</button>
-                    <pre id="output"></pre>
+                        <button onclick="runit()">Run my program!</button>
+                        <pre class="output"></pre>
+                    </div>
+                    <div class="rubric col-xs-3">
+                        <h3>Grading Rubric</h3>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">02pt: # comments >=1</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">10pt: '1337' in output</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">10pt: var 'x' created</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" disabled checked>20pt: x=1337 (unit)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">8pt: Enthusiasm!</label>
+                        </div>
+                        <h3>Total: 47/50pt</h3>
+                        <h3>Comments and Feedback</h3>
+                        <textarea disabled>Good work!</textarea>
+                    </div>
                 </div>
-                <div id="rubric" class="col-xs-3">
-                    <h3>Grading Rubric</h3>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="">02pt: # comments >=1</label>
+                <div class="bossbar row-md-12">
+                    HP <div class="col-md-2"> <h3> Boss Info: </h3> <img class="bossimg" height="100px" width="150px"></div>
+                    <div class="progress">
+                        <div class="progress-bar col-md-8" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%;">
+                            60%
+                        </div>
                     </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="">10pt: '1337' in output</label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="">10pt: var 'x' created</label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="" disabled checked>20pt: x=1337 (unit)</label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="">8pt: Enthusiasm!</label>
-                    </div>
-                    <h3>Total: 47/50pt</h3>
-                    <h3>Comments and Feedback</h3>
-                    <textarea disabled>Good work!</textarea>
                 </div>
             </div>
-            <div id="bossbar" class="row-md-12">
-                <div class="col-md-2"><img id="bossimg" height="100px" width="150px"></div>
-                <div class="progress">
-                    <div class="progress-bar col-md-8" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                        60%
-                    </div>
-                </div>
+            <div id="help" class="tab-pane fade row">
+                <h3>Tip 1</h3>
+                <p>Try looking up 'print'</p>
             </div>
         </div>
-        <div id="help" class="tab-pane fade row">
-            <h3>Tip 1</h3>
-            <p>Try looking up 'print'</p>
+    </div>
+
+    <div id="teacher-editor">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#solution-tab">Solution</a></li>
+            <li><a data-toggle="tab" href="#help">Help</a></li>
+        </ul>
+        <div class="tab-content container-fluid">
+            <div id="solution-tab" class="tab-pane fade in active row">
+                <div class="solution-row row">
+                    <div class="col-xs-9">
+                    <textarea class="yourcode">
+x = 1337
+print(x)
+</textarea>
+                        <button onclick="runit()">Run my program!</button>
+                        <pre class="output"></pre>
+                    </div>
+                    <div class="rubric col-xs-3">
+                        <h3>Grading Rubric</h3>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">02pt: # comments >=1</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">10pt: '1337' in output</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">10pt: var 'x' created</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" disabled checked>20pt: x=1337 (unit)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">8pt: Enthusiasm!</label>
+                        </div>
+                        <h3>Total: 47/50pt</h3>
+                        <h3>Comments and Feedback</h3>
+                        <textarea disabled>Good work!</textarea>
+                    </div>
+                </div>
+                <div class="bossbar row-md-12">
+                    HP <div class="col-md-2"> <h3> Boss Info: </h3> <img class="bossimg" height="100px" width="150px"></div>
+                    <div class="progress">
+                        <div class="progress-bar col-md-8" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%;">
+                            60%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="help" class="tab-pane fade row">
+                <h3>Tip 1</h3>
+                <p>Try looking up 'print'</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="student-editor">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#solution-tab">Solution</a></li>
+            <li><a data-toggle="tab" href="#help">Help</a></li>
+        </ul>
+        <div class="tab-content container-fluid">
+            <div id="solution-tab" class="tab-pane fade in active row">
+                <div class="solution-row row">
+                    <div class="col-xs-9">
+                    <textarea class="yourcode">
+x = 1337
+print(x)
+</textarea>
+                        <button onclick="runit()">Run my program!</button>
+                        <pre class="output"></pre>
+                    </div>
+                    <div class="rubric col-xs-3">
+                        <h3>Grading Rubric</h3>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">02pt: # comments >=1</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">10pt: '1337' in output</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">10pt: var 'x' created</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" disabled checked>20pt: x=1337 (unit)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">8pt: Enthusiasm!</label>
+                        </div>
+                        <h3>Total: 47/50pt</h3>
+                        <h3>Comments and Feedback</h3>
+                        <textarea disabled>Good work!</textarea>
+                    </div>
+                </div>
+                <div class="bossbar row-md-12">
+                    HP <div class="col-md-2"> <h3> Boss Info: </h3> <img class="bossimg" height="100px" width="150px"></div>
+                    <div class="progress">
+                        <div class="progress-bar col-md-8" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100" style="width: 60%;">
+                            60%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="help" class="tab-pane fade row">
+                <h3>Tip 1</h3>
+                <p>Try looking up 'print'</p>
+            </div>
         </div>
     </div>
 </div>
+
 {% endblock %} {% block footer %}
 <!-- CodeMirror text editor -->
 <script src="{{ url_for('static', filename='CodeMirror/codemirror.js') }}"></script>
@@ -79,6 +205,8 @@ print(x)
 <script src="http://www.skulpt.org/static/skulpt.min.js" type="text/javascript"></script>
 <script src="http://www.skulpt.org/static/skulpt-stdlib.js" type="text/javascript"></script>
 <script src="{{ url_for('static', filename='js/editor.js') }}"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
 
 {% endblock %}
