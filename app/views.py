@@ -54,3 +54,7 @@ def teacher_homepage():
 @app.route('/settings')
 def settings():
     return render_template('settings.html')
+
+@app.route('/class-section')
+def class_section():
+    return render_template('class-section.html')
