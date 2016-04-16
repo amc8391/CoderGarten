@@ -252,3 +252,8 @@ div.messages-buttons {
     width: 100%;
     color: #5C5C5C;
 }
+
+/* editor */
+.student-editor, .parent-editor, .teacher-editor {
+    visibility: hidden;
+}

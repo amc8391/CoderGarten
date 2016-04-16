@@ -14,6 +14,7 @@ Python 1 - Step 2: X = 1337
     </ul>
 </div>
 
+<!-- parent -->
 <div class="editor-content">
     <div id="parent-editor">
         <ul class="nav nav-tabs">
@@ -28,32 +29,32 @@ Python 1 - Step 2: X = 1337
 x = 1337
 print(x)
 </textarea>
-                        <button onclick="runit()">Run my program!</button>
+                        <button type="button" class="btn btn-primary" onclick="runit()">Run my program!</button>
                         <pre class="output"></pre>
                     </div>
                     <div class="rubric col-xs-3">
-                        <h3>Grading Rubric</h3>
+                        <h3>Python 1</h3>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="">02pt: # comments >=1</label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="2">02pt: # comments >=1</label>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="">10pt: '1337' in output</label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="10">10pt: '1337' in output</label>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="">10pt: var 'x' created</label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="10">10pt: var 'x' created</label>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="" disabled checked>20pt: x=1337 (unit)</label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="20" disabled checked>20pt: x=1337 (unit)</label>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="">8pt: Enthusiasm!</label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="8">8pt: Enthusiasm!</label>
                         </div>
-                        <h3>Total: 47/50pt</h3>
+                        <h3 class="grading-total">Total: ?/50pt</h3>
                         <h3>Comments and Feedback</h3>
                         <textarea disabled>Good work!</textarea>
                     </div>
@@ -74,7 +75,7 @@ print(x)
             </div>
         </div>
     </div>
-
+<!-- teacher -->
     <div id="teacher-editor">
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#solution-tab">Solution</a></li>
@@ -88,32 +89,32 @@ print(x)
 x = 1337
 print(x)
 </textarea>
-                        <button onclick="runit()">Run my program!</button>
+                        <button type="button" class="btn btn-primary" onclick="runit()">Run my program!</button>
                         <pre class="output"></pre>
                     </div>
                     <div class="rubric col-xs-3">
                         <h3>Grading Rubric</h3>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="">02pt: # comments >=1</label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="2">02pt: # comments >=1</label>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="">10pt: '1337' in output</label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="10">10pt: '1337' in output</label>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="">10pt: var 'x' created</label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="10">10pt: var 'x' created</label>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="" disabled checked>20pt: x=1337 (unit)</label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="20" disabled checked>20pt: x=1337 (unit)</label>
                         </div>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="">8pt: Enthusiasm!</label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="8">8pt: Enthusiasm!</label>
                         </div>
-                        <h3>Total: 47/50pt</h3>
+                        <h3 class="grading-total">Total: ?/50pt</h3>
                         <h3>Comments and Feedback</h3>
                         <textarea disabled>Good work!</textarea>
                     </div>
@@ -135,48 +136,36 @@ print(x)
         </div>
     </div>
 
-
+<!-- student -->
     <div id="student-editor">
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#solution-tab">Solution</a></li>
             <li><a data-toggle="tab" href="#help">Help</a></li>
+            <li><a data-toggle="tab" href="#grading-tab">Grading Breakdown</a></li>
         </ul>
         <div class="tab-content container-fluid">
             <div id="solution-tab" class="tab-pane fade in active row">
                 <div class="solution-row row">
                     <div class="col-xs-9">
                     <textarea class="yourcode">
+# Python 1 - Step 2
+# By saitama
 x = 1337
 print(x)
 </textarea>
-                        <button onclick="runit()">Run my program!</button>
+                        <button type="button" class="btn btn-primary" onclick="runit()">Run my program!</button>
                         <pre class="output"></pre>
                     </div>
                     <div class="rubric col-xs-3">
-                        <h3>Grading Rubric</h3>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">02pt: # comments >=1</label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">10pt: '1337' in output</label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">10pt: var 'x' created</label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="" disabled checked>20pt: x=1337 (unit)</label>
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="">8pt: Enthusiasm!</label>
-                        </div>
-                        <h3>Total: 47/50pt</h3>
-                        <h3>Comments and Feedback</h3>
-                        <textarea disabled>Good work!</textarea>
+                        <h1>Python 1</h1>
+                        <h2>Printing variables</h2>
+                        <p>A variable is just a box that you can put stuff in. You can use variables to store all kinds of stuff, but for now, we are just going to look at storing numbers in variables.</p>
+                        <h3>Instructions</h3>
+                        <ol>
+                            <li>Create a variable named 'x'</li>
+                            <li>Assign the number 1337 to x</li>
+                            <li>Print x's value to the screen</li>
+                        </ol>
                     </div>
                 </div>
                 <div class="bossbar row-md-12">
@@ -192,6 +181,45 @@ print(x)
             <div id="help" class="tab-pane fade row">
                 <h3>Tip 1</h3>
                 <p>Try looking up 'print'</p>
+            </div>
+            <div id="grading-tab" class="tab-pane fade row">
+                <div class="solution-row row">
+                    <div class="col-xs-9">
+                    <textarea class="yourcode">
+x = 1337
+print(x)
+</textarea>
+                        <button type="button" class="btn btn-primary" onclick="recalcGrade('grading-total')">Calculate my Grade!</button>
+                        <pre class="output"></pre>
+                    </div>
+                    <div class="rubric col-xs-3">
+                        <h3>Grading Rubric</h3>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="2" disabled checked>02pt: # comments >=1</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="10" disabled checked>10pt: '1337' in output</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="10" disabled checked>10pt: var 'x' created</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="20" disabled checked>20pt: x=1337 (unit)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" onchange="recalcGrade('grading-total')" value="8" disabled>8pt: Enthusiasm!</label>
+                        </div>
+                        <h3 class="grading-total">Total: ?/50pt</h3>
+                        <h3>Comments and Feedback</h3>
+                        <textarea disabled>Good work!</textarea>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

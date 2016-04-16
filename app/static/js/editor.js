@@ -40,6 +40,19 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function recalcGrade(elemclass){
+  var gradingTotal = 0;
+  $( ":checkbox:visible").each(function(){
+    if(this.checked){
+      gradingTotal += parseInt(this.value);
+    }
+  });
+  console.log(gradingTotal);
+  $("."+elemclass).each(function(){
+    this.innerText = "Total: " + gradingTotal + "/50pt";
+  })
+}
+
 // Here's everything you need to run a python program in skulpt
 // grab the code from your textarea
 // get a reference to your pre element for output
@@ -75,9 +88,15 @@ function startEditor() {
       if($(this).is(":visible")){
         CURRENT_EDITOR = CodeMirror.fromTextArea(this), {
           lineNumbers: true,
-          mode: 'python'
+          mode: 'python',
         }
       }
+      // else{
+      //   var throwaway = CodeMirror.fromTextArea(this), {
+      //     lineNumbers: true,
+      //     mode: 'python'
+      //   }
+      // }
     });
     // myTextarea = document.getElementById("yourcode");
     // CURRENT_EDITOR = CodeMirror.fromTextArea(myTextarea, {
@@ -115,6 +134,7 @@ $(document).ready(function() {
     //console.log(userType);
     console.log("loaded it!");
     startEditor();
+    recalcGrade('grading-total');
     displayBoss();
 });
 // if userType ==
