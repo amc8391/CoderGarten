@@ -134,6 +134,9 @@ $(document).ready(function() {
     //console.log(userType);
     console.log("loaded it!");
     startEditor();
+    if(uType == "parent"){
+      CURRENT_EDITOR.options.readOnly=true;
+    }
     recalcGrade('grading-total');
     displayBoss();
 });
