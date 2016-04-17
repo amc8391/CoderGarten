@@ -25,12 +25,13 @@ Assignments | CoderGarten
                                 </div>
                             </div>
                             <div class="col-md-2">
-		    			        <button type="button" class="btn btn-xs btn-default">View Assignments</button>
+		    			        <button type="button" data-toggle="modal" data-target="#assignmodal"
+                                        class="btn btn-xs btn-default">View Classes</button>
 		    		        </div>
                         </td>
                     </tr>
 
-                    </tr>
+                    <tr>
                         <td>
                             <div class="col-md-3">Python 2 - Loops</div>
                                 <div class="col-md-7">
@@ -41,10 +42,49 @@ Assignments | CoderGarten
                                 </div>
                             </div>
                             <div class="col-md-2">
-		    			        <button type="button" class="btn btn-xs btn-default">View Assignments</button>
+                                <button type="button" data-toggle="modal" data-target="#assignmodal"
+                                        class="btn btn-xs btn-default">View Classes</button>
 		    		        </div>
                         </td>
                     </tr>
+
+                    {% if "1" in session.modal %}
+                        <tr>
+                            <td>
+                                <div class="col-md-3">Python 3 - Functions</div>
+                                <div class="col-md-7">
+                                    <div class="progress text-centered">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                                             aria-valuemin="0" ariavaluemax="100" style="width:0%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="button" data-toggle="modal" data-target="#assignmodal"
+                                            class="btn btn-xs btn-default">View Classes</button>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endif %}
+
+                    {% if "2" in session.modal %}
+                        <tr>
+                            <td>
+                                <div class="col-md-3">Python 4 - Classes</div>
+                                <div class="col-md-7">
+                                    <div class="progress text-centered">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                                             aria-valuemin="0" ariavaluemax="100" style="width:0%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="button" data-toggle="modal" data-target="#assignmodal"
+                                            class="btn btn-xs btn-default">View Classes</button>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endif %}
                 </table>
             </div>
         </section>
@@ -57,6 +97,7 @@ Assignments | CoderGarten
                 <div class="panel-body">
                 <table class="table table-responsive" style="border-collapse:collapse;">
                     <tr></tr>
+                    {% if "1" not in session.modal %}
                     <tr>
                         <td>
                             <div class="col-md-3">Python 3 - Functions</div>
@@ -69,11 +110,12 @@ Assignments | CoderGarten
                             </div>
                             <div class="col-md-2">
 		    			        <button type="button" class="btn btn-xs btn-default"
-                                data-toggle="modal" data-target="#teachmodal">Assign</button>
+                                data-toggle="modal" data-target="#teachmodal1">Assign</button>
                             </div>
                         </td>
                     </tr>
-
+                    {% endif %}
+                    {% if "2" not in session.modal %}
                     <tr>
                         <td>
                             <div class="col-md-3">Python 4 - Classes</div>
@@ -86,16 +128,17 @@ Assignments | CoderGarten
                             </div>
                             <div class="col-md-2">
 		    			        <button type="button" class="btn btn-xs btn-default"
-                                data-toggle="modal" data-target="#teachmodal">Assign</button>
+                                data-toggle="modal" data-target="#teachmodal2">Assign</button>
 		    		        </div>
                         </td>
                     </tr>
+                    {% endif %}
 
 
                 </table>
             </div>
 
-        <div id="teachmodal" class="modal fade" role="dialog">
+        <div id="teachmodal1" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -122,9 +165,9 @@ Assignments | CoderGarten
 
                                 <tr class="collapse section1">
                                     <td style="padding-left:40px;" colspan="2">
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">Bobby Droptables</label></p>
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">John Smith</label></p>
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">Jane Martin</label></p>
+                                        <p>Bobby Droptables</p>
+                                        <p>John Smith</p>
+                                        <p>Jane Martin</p>
                                     </td>
                                 </tr>
 
@@ -144,9 +187,9 @@ Assignments | CoderGarten
 
                                 <tr class="collapse section2">
                                     <td style="padding-left:40px;" colspan="2">
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">Draci Malfoy</label></p>
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">Jacob Java</label></p>
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">Peter Python</label></p>
+                                        <p>Draci Malfoy</p>
+                                        <p>Jacob Java</p>
+                                        <p>Peter Python</p>
                                     </td>
                                 </tr>
 
@@ -165,9 +208,9 @@ Assignments | CoderGarten
 
                                 <tr class="collapse section3">
                                     <td style="padding-left:40px;" colspan="2">
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">Patricia Perl</label></p>
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">Charlie C</label></p>
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">Lazy John</label></p>
+                                        <p>Patricia Perl</p>
+                                        <p>Charlie C</p>
+                                        <p>Lazy John</p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -185,9 +228,9 @@ Assignments | CoderGarten
 
                                 <tr class="collapse section4">
                                     <td style="padding-left:40px;" colspan="2">
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">Henry Haskell</label></p>
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">George Go</label></p>
-                                        <p><label class="checkbox-inline"><input type="checkbox" checked="checked">Frank Fortran</label></p>
+                                        <p>Henry Haskell</p>
+                                        <p>George Go</p>
+                                        <p>Frank Fortran</p>
                                     </td>
                                 </tr>
 
@@ -196,15 +239,184 @@ Assignments | CoderGarten
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-xs btn-default" data-dismiss="modal">Assign</button>
+                        <form action="/teacher-assignments" method="post">
+                            <input type ="hidden" name ="modal" value ="1"/>
+                            <button type="submit" class="btn btn-xs btn-default"
+                                    formmethod="post" formaction="/teacher-assignments">Assign</button>
+                        </form>
                     </div>
                 </div>
 
+                </div>
+            </div>
+        <div id="teachmodal2" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Assign Work</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div style="overflow-y:scroll;max-height:400px;">
+
+                            <table class="table table-responsive">
+                                <tr></tr>
+                                <tr>
+                                    <td>
+                                        <div class="col-md-8">
+                                            1st Period - 5th Grade
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" id="section1" data-target=".section1">
+                                                    <span class="glyphicon glyphicon-plus">    View</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="collapse section1">
+                                    <td style="padding-left:40px;" colspan="2">
+                                        <p>Bobby Droptables</p>
+                                        <p>John Smith</p>
+                                        <p>Jane Martin</p>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <div class="col-md-8">
+                                            5th Period - 7th Grade
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" id="section2" data-target=".section2">
+                                                    <span class="glyphicon glyphicon-plus">    View</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="collapse section2">
+                                    <td style="padding-left:40px;" colspan="2">
+                                        <p>Draci Malfoy</p>
+                                        <p>Jacob Java</p>
+                                        <p>Peter Python</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="col-md-8">
+                                            7th Period - 6th Grade
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" id="section3" data-target=".section3">
+                                                    <span class="glyphicon glyphicon-plus">    View</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="collapse section3">
+                                    <td style="padding-left:40px;" colspan="2">
+                                        <p>Patricia Perl</p>
+                                        <p>Charlie C</p>
+                                        <p>Lazy John</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="col-md-8">
+                                            9th Period - 5th Grade
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button type="button" class="btn btn-default btn-xs" data-toggle="collapse" id="section4" data-target=".section4">
+                                                    <span class="glyphicon glyphicon-plus">    View</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="collapse section4">
+                                    <td style="padding-left:40px;" colspan="2">
+                                        <p>Henry Haskell</p>
+                                        <p>George Go</p>
+                                        <p>Frank Fortran</p>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <form action="/teacher-assignments" method="post">
+                            <input type="hidden" name="modal" value="2" />
+
+                            <button type="submit" class="btn btn-xs btn-default"
+                                    formmethod="post" formaction="/teacher-assignments">Assign</button>
+                            </form>
+                        </form>
+                    </div>
+                </div>
+
+                </div>
             </div>
 
+        <div id="assignmodal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">View Class Sections</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div style="overflow-y:scroll;max-height:400px;">
+
+                                <table class="table table-responsive">
+                                    <tr></tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-md-12">
+                                                <a href="/class-section">1st Period - 5th Grade</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-md-12">
+                                                <a href="/class-section">5th Period - 7th Grade</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-md-12">
+                                                <a href="/class-section">7th Period - 6th Grade</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="col-md-12">
+                                                <a href="/class-section">9th Period - 5th Grade</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </table>
 
 
-        </div>
+                            </div>
+                    </div>
+                        <div class="modal-footer">
+                            <form method="POST" action="/teacher-assignments">
+                                <button type="button" class="btn btn-xs btn-default" data-dismiss="modal"
+                                        href="/teacher-assignments" formmethod="POST">Exit</button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     </div>
 {% endblock %}

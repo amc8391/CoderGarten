@@ -1,6 +1,6 @@
 __author__ = 'Team OnePunch'
 from app import app
-from flask import render_template
+from flask import render_template, request, session
 
 
 @app.route('/index')
@@ -10,6 +10,8 @@ def index():
 @app.route('/')
 @app.route('/login')
 def login():
+    session.clear()
+    session['modal'] = []
     return render_template('login.html')
 
 @app.route('/student-homepage')
@@ -37,8 +39,12 @@ def new_message():
 def view_message():
     return render_template('view-message.html')
 
-@app.route('/teacher-assignments')
+
+@app.route('/teacher-assignments', methods=['GET', 'POST'])
 def teacher_assignments():
+    if request.method == "POST":
+        session['modal'].append(request.form['modal'])
+
     return render_template('teacher-assignments.html')
 
 
