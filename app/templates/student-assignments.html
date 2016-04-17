@@ -1,0 +1,87 @@
+{% extends 'main.html' %}
+{% block title %}
+Assignments | CoderGarten
+{% endblock %}
+<!--Assignment button pops up modal that shows a list of students that you can assign students-->
+{% block content %}
+<div class="column">
+    <section class="panel panel-default panel-65">
+        <header class="panel-heading">
+            <h3 class="panel-title">In Progress</h3>
+        </header>
+        <div class="panel-body">
+            <table class="table table-responsive">
+                <tr></tr>
+                <tr>
+                    <td>
+                        <div class="col-md-3">Python 1 - Variables and Printing</div>
+                        <div class="col-md-7">
+                            <div class="progress text-center">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" ariavaluemax="100" style="width:75%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="/editor">
+                                <button type="button" class="btn btn-xs btn-default">Continue</button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="col-md-3">Python 2 - Loops</div>
+                        <div class="col-md-7">
+                            <div class="progress text-centered">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" ariavaluemax="100" style="width:50%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="/editor">
+                                <button type="button" class="btn btn-xs btn-default">Continue</button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="panel panel-default panel-65">
+        <header class="panel-heading">
+            <h3 class="panel-title">Completed</h3>
+        </header>
+        <div class="panel-body">
+            <table class="table table-responsive" style="border-collapse:collapse;">
+                <tr></tr>
+                <tr>
+                    <td>
+                        <div class="col-md-3">Python 3 - Functions</div>
+                        <div class="col-md-6">
+                            <div class="progress text-center">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" ariavaluemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1">4,000XP</div>
+                        <div class="col-md-2">3/14/2016</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="col-md-3">Python 4 - Classes</div>
+                        <div class="col-md-6">
+                            <div class="progress text-center">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" ariavaluemax="100" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1">5,001XP</div>
+                        <div class="col-md-2">3/15/2016</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</div>
+{% endblock %}

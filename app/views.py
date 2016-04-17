@@ -18,6 +18,10 @@ def login():
 def student_homepage():
     return render_template('student-homepage.html')
 
+@app.route('/student-assignments')
+def student_assignments():
+    return render_template('student-assignments.html')
+
 # TODO: Replace later.
 @app.route('/parent-homepage')
 def parent_homepage():
