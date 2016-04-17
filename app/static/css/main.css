@@ -35,7 +35,7 @@ h1 {
     margin-bottom: 51px;
 	/*margin-top: 51px;*/
     margin: 0 auto;
-	width: 65%;
+	width: 75%;
 }
 @media screen and (max-width: 768px) {
     #content {
@@ -256,4 +256,10 @@ div.messages-buttons {
 /* editor */
 .student-editor, .parent-editor, .teacher-editor {
     visibility: hidden;
+}
+
+.rubric {
+    border-left: 1px solid #ddd;
+    overflow-y: scroll;
+    max-height: 440px;
 }
