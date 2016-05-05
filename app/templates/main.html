@@ -37,11 +37,11 @@
         </div>
         <div id="navbar-student" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/student-homepage"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="/student-assignments"><span class="glyphicon glyphicon-pencil"></span> Assignments</a></li>
-            <li><a href="/leaderboard"><span class="glyphicon glyphicon-stats"></span> Leaderboards</a></li>
-            <li><a href="/messages"><span class="glyphicon glyphicon-envelope"></span> Messages <span class="badge">5</span></a></li>
-            <li><a href="/settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+            <li{% if active_page == 'home' %} class="active"{% endif %}><a href="/student-homepage"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li{% if active_page == 'assignments' %} class="active"{% endif %}><a href="/student-assignments"><span class="glyphicon glyphicon-pencil"></span> Assignments</a></li>
+            <li{% if active_page == 'leaderboards' %} class="active"{% endif %}><a href="/leaderboard"><span class="glyphicon glyphicon-stats"></span> Leaderboards</a></li>
+            <li{% if active_page == 'messages' %} class="active"{% endif %}><a href="/messages"><span class="glyphicon glyphicon-envelope"></span> Messages <span class="badge">5</span></a></li>
+            <li{% if active_page == 'settings' %} class="active"{% endif %}><a href="/settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a class="dead-link" href="#">Hi, saitama! <span style="color:red">Lv. 9001</span></a></li>
@@ -69,10 +69,10 @@
         </div>
         <div id="navbar-parent" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/parent-homepage"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="/leaderboard"><span class="glyphicon glyphicon-stats"></span> Leaderboards</a></li>
-            <li><a href="/messages"><span class="glyphicon glyphicon-envelope"></span> Messages <span class="badge">5</span></a></li>
-            <li><a href="/settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+            <li{% if active_page == 'home' %} class="active"{% endif %}><a href="/parent-homepage"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li{% if active_page == 'leaderboards' %} class="active"{% endif %}><a href="/leaderboard"><span class="glyphicon glyphicon-stats"></span> Leaderboards</a></li>
+            <li{% if active_page == 'messages' %} class="active"{% endif %}><a href="/messages"><span class="glyphicon glyphicon-envelope"></span> Messages <span class="badge">5</span></a></li>
+            <li{% if active_page == 'settings' %} class="active"{% endif %}><a href="/settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a class="dead-link" href="#">Hi, one!</a></li>
@@ -100,11 +100,11 @@
         </div>
         <div id="navbar-teacher" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/teacher-homepage"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="/teacher-assignments"><span class="glyphicon glyphicon-pencil"></span> Assignments</a></li>
-            <li><a href="/leaderboard"><span class="glyphicon glyphicon-stats"></span> Leaderboards</a></li>
-            <li><a href="/messages"><span class="glyphicon glyphicon-envelope"></span> Messages <span class="badge">5</span></a></li>
-            <li><a href="/settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+            <li{% if active_page == 'home' %} class="active"{% endif %}><a href="/teacher-homepage"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li{% if active_page == 'assignments' %} class="active"{% endif %}><a href="/teacher-assignments"><span class="glyphicon glyphicon-pencil"></span> Assignments</a></li>
+            <li{% if active_page == 'leaderboards' %} class="active"{% endif %}><a href="/leaderboard"><span class="glyphicon glyphicon-stats"></span> Leaderboards</a></li>
+            <li{% if active_page == 'messages' %} class="active"{% endif %}><a href="/messages"><span class="glyphicon glyphicon-envelope"></span> Messages <span class="badge">5</span></a></li>
+            <li{% if active_page == 'settings' %} class="active"{% endif %}><a href="/settings"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a class="dead-link" href="#">Hi, murata!</a></li>
