@@ -233,7 +233,8 @@ h1 {
 
 /* messages */
 .clickable-row:hover {
-    background-color: #80DFFF;
+    background-color: #337ab7;
+    color: white;
     cursor: pointer;
 }
 
