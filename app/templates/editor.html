@@ -111,26 +111,6 @@ print(x)
         <div class="tab-content container-fluid">
             <div id="solution-tab" class="tab-pane fade in active row">
                 <div class="solution-row row">
-                    <div class="col-xs-9">
-                    <div class="dropdown">
-                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose a Student
-                      <span class="caret"></span></button>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">saitama</a></li>
-                        <li><a href="#">Other student</a></li>
-                        <li><a href="#">Other other student</a></li>
-                      </ul>
-                    </div>
-                    <textarea cltextarea class="yourcode" style="width: 100%; height:100%" disabled>
-# Python 1 - Step 2
-# By saitama
-x = 1337
-print(x)
-</textarea>
-                        <button style="margin-bottom: 5px;" type="button" class="btn btn-primary" onclick="runit()">
-                            <i class="fa fa-hand-rock-o" aria-hidden="true"></i> Run my program!</button>
-                        <pre class="output"></pre>
-                    </div>
                     <div class="rubric col-xs-3">
                         <h3>Grading Rubric</h3>
                         <div class="checkbox">
@@ -154,14 +134,35 @@ print(x)
                                 <input type="checkbox" onchange="recalcGrade('grading-total')" value="8">8pt: Enthusiasm!</label>
                         </div>
                         <h3>Comments and Feedback</h3>
-                        <textarea>Good work!</textarea>
+                        <textarea>Good work!</textarea><br>
+                        <button type="button" class="btn btn-success">Save feedback</button>
+                    </div>
+                    <div class="col-xs-9">
+                    <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose a Student
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">saitama</a></li>
+                        <li><a href="#">Other student</a></li>
+                        <li><a href="#">Other other student</a></li>
+                      </ul>
+                    </div>
+                    <textarea cltextarea class="yourcode" style="width: 100%; height:100%" disabled>
+# Python 1 - Step 2
+# By saitama
+x = 1337
+print(x)
+</textarea>
+                        <button style="margin-bottom: 5px;" type="button" class="btn btn-primary" onclick="runit()">
+                            <i class="fa fa-hand-rock-o" aria-hidden="true"></i> Run my program!</button>
+                        <pre class="output"></pre>
                     </div>
                 </div>
-                <div class="row-md-12">
-                    <div class="col-md-2"><a href="/teacher-assignments"><button type="button" class="btn btn-primary">
+                <div class="row">
+                    <div class="col-xs-3"><a href="/teacher-assignments"><button type="button" class="btn btn-primary">
                         <span class="glyphicon glyphicon-send"></span> Submit Grade</button></a> </div>
-                    <div class="col-md-6">
-                        <button type="button" class="btn btn-primary" onclick="recalcGrade('grading-total')">Calculate my grade!</button>
+                    <div class="col-xs-9">
+                        <button type="button" class="btn btn-primary" onclick="recalcGrade('grading-total')">Calculate grade!</button>
                         <h3 class="grading-total">Total: ?/50pt</h3>
                     </div>
                 </div>
