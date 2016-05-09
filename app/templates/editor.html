@@ -14,6 +14,13 @@ Python 1 - Step 2: X = 1337
             <li><a href="#">Stage 3</a></li>
         </ul>
     </div>
+<style type="text/css">
+	.rubric {
+		overflow-y:auto;
+		border-right: solid;
+		border-color: #DDD;
+	}
+</style>
 
 <!-- parent -->
 <div class="editor-content">
@@ -178,30 +185,6 @@ print(x)
         <div class="tab-content container-fluid">
             <div id="solution-tab" class="tab-pane fade in active row">
                 <div class="solution-row row">
-                    <div class="col-xs-9">
-                    <textarea cltextarea class="yourcode" style="width: 100%; height:100%" disabled>
-# Python 1 - Step 2
-# By saitama
-x = 1337
-print(x)
-</textarea>
-                        <button style="margin-bottom: 5px;" type="button" class="btn btn-primary" style="margin-bottom: 5px" onclick="runit()">
-                            <i class="fa fa-hand-rock-o" aria-hidden="true"></i> Attack!</button>
-                        <pre class="output"></pre>
-                        <div class="bossbar">
-                            <h3> Boss Info: </h3>
-                            <div> <img class="bossimg col-xs-4" style="padding-left: 0" height="auto" width="150px"></div>
-                            <div class="health">
-                                HP
-                                <div class="progress">
-                                    <div class="progress-bar col-md-8" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 60%;">
-                                        60%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="rubric col-xs-3">
                         <h1>Python 1</h1>
                         <h2>Printing variables</h2>
@@ -213,14 +196,7 @@ print(x)
                             <li>Print x's value to the screen</li>
                         </ol>
                     </div>
-                </div>
-            </div>
-            <div id="help" class="tab-pane fade row">
-                <h3>Tip 1</h3>
-                <p>Try looking up 'print'</p>
-            </div>
-            <div id="grading-tab" class="tab-pane fade row">
-                <div class="solution-row row">
+
                     <div class="col-xs-9">
                     <textarea cltextarea class="yourcode" style="width: 100%; height:100%" disabled>
 # Python 1 - Step 2
@@ -228,8 +204,31 @@ print(x)
 x = 1337
 print(x)
 </textarea>
+                        <button style="margin-bottom: 5px;" type="button" class="btn btn-primary" style="margin-bottom: 5px" onclick="runit()">
+                            <i class="fa fa-hand-rock-o" aria-hidden="true"></i> Attack!</button>
                         <pre class="output"></pre>
                     </div>
+                </div>
+                <div class="bossbar row">
+                    <h3> Boss Info: </h3>
+                    <div> <img class="bossimg col-xs-4" style="padding-left: 0" height="auto" width="150px"></div>
+                    <div class="health">
+                        HP
+                        <div class="progress">
+                            <div class="progress-bar col-xs-8" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="100" style="width: 60%;">
+                                60%
+                            </div>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+            <div id="help" class="tab-pane fade row">
+                <h3>Tip 1</h3>
+                <p>Try looking up 'print'</p>
+            </div>
+            <div id="grading-tab" class="tab-pane fade row">
+                <div class="solution-row row">
                     <div class="rubric col-xs-3">
                         <h3>Grading Rubric</h3>
                         <div class="checkbox">
@@ -254,6 +253,16 @@ print(x)
                         </div>
                         <h3>Comments and Feedback</h3>
                         <textarea disabled>Good work!</textarea>
+                    </div>
+
+                    <div class="col-xs-9">
+                    <textarea cltextarea class="yourcode" style="width: 100%; height:100%" disabled>
+# Python 1 - Step 2
+# By saitama
+x = 1337
+print(x)
+</textarea>
+                        <pre class="output"></pre>
                     </div>
                 </div>
                 <div class="row-md-12">
